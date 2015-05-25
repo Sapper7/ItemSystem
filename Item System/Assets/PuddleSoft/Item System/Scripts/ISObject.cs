@@ -6,53 +6,38 @@ public class ISObject : IISObject {
 	[SerializeField]string _name;
 	[SerializeField]int _value;
 	[SerializeField]int _burden;
-	[SerializeField]ISQuality quality;
+	[SerializeField]ISQuality _quality;
 
 	#region IISObject implementation
 
-	public string ISName {
-		get {
-			throw new System.NotImplementedException ();
-		}
-		set {
-			throw new System.NotImplementedException ();
-		}
+	public string ISName 
+	{
+		get { return _name;}
+		set {_name = value;}
 	}
 
-	public int ISValue {
-		get {
-			throw new System.NotImplementedException ();
-		}
-		set {
-			throw new System.NotImplementedException ();
-		}
+	public int ISValue 
+	{
+		get { return _value;}
+		set { _value = value;}
 	}
 
-	public Sprite ISIcon {
-		get {
-			throw new System.NotImplementedException ();
-		}
-		set {
-			throw new System.NotImplementedException ();
-		}
+	public Sprite ISIcon 
+	{
+		get { return _icon;}
+		set { _icon = value;}
 	}
 
-	public int ISBurden {
-		get {
-			throw new System.NotImplementedException ();
-		}
-		set {
-			throw new System.NotImplementedException ();
-		}
+	public int ISBurden 
+	{
+		get { return _burden;}
+		set { _burden = value;}
 	}
 
-	public ISQuality ISquality {
-		get {
-			throw new System.NotImplementedException ();
-		}
-		set {
-			throw new System.NotImplementedException ();
-		}
+	public ISQuality ISquality 
+	{
+		get { return _quality;}
+		set { _quality = value;}
 	}
 
 	#endregion
